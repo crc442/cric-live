@@ -8,11 +8,14 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/demo.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/drunken-parrot.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="crickStuffApp">
@@ -21,15 +24,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">crickStuff</h3>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <p class="navbar-text navbar-right"><a href="#/about" style='font-family: "SourceSansProExtraLight", Helvetica, Arial, sans-serif; font-size: 30px; line-height: 1.2; color: #34495e; padding-top: 27px; padding-left: 100px;'>About</a></p>
       </div>
+    </nav>
+
+    <div class="masthead">
+      <div class="container">
+        <img src="images/ball.png">
+        <div class="ball-shadow"></div>
+        <div class="masthead-title">LIVE Cricket Scores
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
 
       <div ng-view=""></div>
 
