@@ -25,8 +25,10 @@
 
     <!-- Add your site or application content here -->
     <nav class="navbar navbar-inverse" role="navigation">
-      <p class="navbar-text navbar-right"><a href="#/about" style='font-family: "SourceSansProExtraLight", Helvetica, Arial, sans-serif; font-size: 30px; line-height: 1.2; color: #34495e; padding-top: 27px; padding-left: 100px;'>About</a></p>
-      </div>
+      <ul class="nav navbar-nav navbar-text navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#/about">About</a></li>
+        </ul>
     </nav>
 
     <div class="masthead">
@@ -41,7 +43,9 @@
     <div class="container">
 
 
-      <div ng-view=""></div>
+      <div ng-view="">
+        <!-- All the views appear here -->
+      </div>
 
       <div style='text-align: center;'class="footer">
         <hr>
