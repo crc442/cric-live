@@ -1,6 +1,6 @@
 .ball-shadow
 {
-  -webkit-animation: bs 2s cubic-bezier(1.000,0.440,0.840,1.000) infinite, bs 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
+  -webkit-animation: bs 2s cubic-bezier(.63,.09,.75,.46) infinite alternate;
   width: 12em;
   height: .125em;
   border-radius: 50%;
@@ -18,7 +18,7 @@
   }
   50%
   {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(29, 95, 74, 1);
     width:1em;
   }
   100%
@@ -29,7 +29,7 @@
 
 .ball
 {
-  -webkit-animation: ball 4s cubic-bezier(1.000,0.440,0.840,1.000) infinite, ball 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
+  -webkit-animation: ball 2s cubic-bezier(.63,.09,.75,.46) infinite alternate;
   width: 5em;
   height: 5em;
 }
@@ -50,3 +50,18 @@
     -webkit-transform: translateY(-5em);
   }
 }
+
+.blink {
+      animation: blink 1s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }

@@ -226,6 +226,7 @@ fieldset[disabled] .btn {
   color: #02baf2;
   background-color: white;
   border-color: #d6e1e5;
+ /* border-radius: 50%;*/
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -2367,9 +2368,10 @@ a.list-group-item-danger.active:focus {
   padding: 35px 25px 40px 25px;
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 .tile-profile {
-  background-color: #fad46b;
+  background-color: #ecf0f1;
 }
 .tile-profile img {
   border: 5px solid white;

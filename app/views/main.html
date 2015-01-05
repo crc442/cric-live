@@ -1,3 +1,19 @@
 <div class="jumbotron">
-hrllo
+    <div class="tile tile-profile" ng-repeat='m in matches.match'>
+        <a ng-if="m.state._mchState == 'inprogress'" style="float:right; color:#e74c3c;" href="">
+          <i class="fa fa-circle"><span class='blink'>LIVE</span></i>
+        </a>
+
+        <h2 style="font-family: 'SourceSansProExtraLight';">{{ m._srs}} ~ {{ m._mnum }} - Innings {{m._inngCnt}}</h2>
+        <!-- <img src="images/captain-hoarrd.png" alt=""> -->
+        <h1 style='display:inline;'>{{ m.Tm[0]._Name }}</h1>
+        <h4 style='display:inline; color:#c0392b; padding-left: 10px; padding-right:10px; font-family: "SourceSansProExtraLight";'>  VS  </h4>
+        <!-- <button class="btn btn-default">VS</button> -->
+        <h1 style='display:inline;'>{{m.Tm[1]._Name }}</h1>
+        <!-- <img src="images/captain-hoarrd.png"> -->
+        <h3 style="font-family: 'SourceSansProExtraLight'; color: #27ae60;">{{m.state._status}}</h4>
+        <hr>
+        <a href="#" style='display:inline; margin-right:50px;' class="btn btn-block btn-danger btn-embossed">MORE DETAILS</a>
+        <a href="#" style='display:inline; margin-left:50px;'  class="btn btn-block btn-danger btn-embossed">WATCH ONLINE</a>
+    </div>
 </div>
