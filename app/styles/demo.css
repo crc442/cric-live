@@ -13,10 +13,10 @@
 .masthead img {
   float: left;
   position: relative;
-  top: 20px;
-  left: 5px;
-
+  bottom: 50px;
+  left: -30px;
 }
+
 .masthead .masthead-title {
   font-family: "SourceSansProExtraLight", Helvetica, Arial, sans-serif;
   font-size: 30px;
@@ -25,8 +25,9 @@
   float: left;
   position: relative;
   margin-left: 5%;
-  margin-top: 20px;
+  bottom: 48px;
 }
+
 .masthead .masthead-title small {
   color: white;
   font-family: "SourceSansProBold", Helvetica, Arial, sans-serif;

@@ -1,12 +1,14 @@
 .ball-shadow
 {
-  position:relative;
-  display:block-inline;
   -webkit-animation: bs 2s cubic-bezier(1.000,0.440,0.840,1.000) infinite, bs 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
   width: 12em;
   height: .125em;
   border-radius: 50%;
   background-color: rgba(29, 95, 74, 0.25);
+  bottom: -22px;
+  left: 5px;
+  position: relative;
+  z-index: 3;
 }
 
 @-webkit-keyframes 'bs'
@@ -22,5 +24,29 @@
   100%
   {
     width:10em;
+  }
+}
+
+.ball
+{
+  -webkit-animation: ball 4s cubic-bezier(1.000,0.440,0.840,1.000) infinite, ball 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
+  width: 5em;
+  height: 5em;
+}
+
+@-webkit-keyframes 'ball'
+{
+  0%
+  {
+    -webkit-transform: translateY(-5em);
+  }
+  50% {
+    width: 5.8em;
+    height: 4.5em;
+    -webkit-transform:translateY(0em);
+  }
+  100%
+  {
+    -webkit-transform: translateY(-5em);
   }
 }
